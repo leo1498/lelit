@@ -1,12 +1,16 @@
-<?
+<?php
 //***************** Страница с завершением заказа ******************
-// session_start();
+session_start();
 
 // формируем массив с товарами в заказе (если товар один - оставляйте только первый элемент массива)
 $productsList = $_POST['productsList'];
-$productsList = json_decode($productslist, true);
+$productsList = json_decode($productsList, true);
+
+var_dump($productsList);
+exit;
 
 $products = urlencode(serialize($productsList));
+
 $sender = urlencode(serialize($_SERVER));
 // параметры запроса
 $data = array(

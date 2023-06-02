@@ -10,7 +10,7 @@
                     <input type="hidden" name="productsList">
                     <input class="field" name="name" type="text" placeholder="Ваше ім'я" required>
                     <input class="field" name="phone" type="tel" placeholder="Ваш телефон" required>
-                    <button class="pay">Замовити зараз</button>
+                    <button class="pay" type="submit">Замовити зараз</button>
                 </form>
                 <button class="close-button"><img src="img/close.png" alt=""></button>
             </div>

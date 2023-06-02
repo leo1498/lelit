@@ -68,7 +68,7 @@
         </div>
         <button
             class="button add-to-cart" 
-            data-name="<?php echo $item['title'] ?>, #<?php echo $item['code'] ?>" 
+            data-name="<?php echo $item['code'] ?>" 
             data-price="<?php echo $item['price'] ?>" 
             data-img='<?php echo $item['img'][0] ?>'
         >
