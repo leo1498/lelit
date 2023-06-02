@@ -22,7 +22,6 @@ if (isset($_GET['category'])) {
         <div class="catalog__sale">
             <p>
                 ЛИШЕ СЬОГОДНІ ЗНИЖКА -50%
-                ти пісюн
             </p>
         </div>
 
