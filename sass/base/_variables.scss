@@ -1,0 +1,26 @@
+$bDesktop:              'only screen and (min-width: 1799px)';
+$desktop:               "only screen and (min-width: 1600px)";
+$sDesktop:              "only screen and (min-width: 1365px)";
+$tablet:                "only screen and (max-width: 1279px)";
+$sTablet:               "only screen and (min-width: 1023px)";
+$mobile:                "only screen and (min-width: 768px)";
+$mMobile:               "only screen and (max-width: 479px)";
+$sMobile:               "only screen and (max-width: 371px)";
+$onlyMobileAndTablet:   "only screen and (max-width: 1023px)";
+$onlyTablet:            "only screen and (min-width: 768px) and (max-width: 1023px)";
+$onlyMobile:            "only screen and (max-width: 767px)";
+$belowMenuBreak:        "only screen and (max-width: 1066px)";
+$menuBreak:             $sTablet;
+
+$primary:             #c00e0e;
+$primary-dark:        #B50014;
+$dark:                #222;
+$dark2:               #272727;
+$white:               #fff;
+$shadow:              #F7F7F7;
+$shadow-lvl1:         #D4D4D4;
+$shadow-lvl2:         #D1D1D1;
+$dark-lvl1:           #777;
+$white-filter:         brightness(0) invert(1);
+
+$font-primary:          'Montserrat', sans-serif;
