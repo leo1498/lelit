@@ -20,7 +20,10 @@ if (isset($_GET['category'])) {
             <img loading="lazy" src="/img/header-img.png" alt="">
         </div>
         <div class="catalog__sale">
-            <p>ЛИШЕ СЬОГОДНІ ЗНИЖКА -50%</p>
+            <p>
+                ЛИШЕ СЬОГОДНІ ЗНИЖКА -50%
+                ти пісюн
+            </p>
         </div>
 
         <div class="catalog__wrapper catalog__wrapper-activ">
