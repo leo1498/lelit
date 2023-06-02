@@ -65,8 +65,9 @@ const shoppingCart = (function() {
     // Private methods and properties
     let cart = [];
 
-    function Item(name, price, count, img) {
-        this.product_id = name;
+    function Item(product_id, name, price, count, img) {
+        this.product_id = product_id;
+        this.name = name;
         this.price = price;
         this.count = count;
         this.img = img;
@@ -88,7 +89,7 @@ const shoppingCart = (function() {
     // Public methods and properties
     var obj = {};
 
-    obj.addItemToCart = function(name, price, count, img) {
+    obj.addItemToCart = function(product_id, name, price, count, img) {
         for (var i in cart) {
             if (cart[i].name === name) {
                 cart[i].count += count;
@@ -97,7 +98,7 @@ const shoppingCart = (function() {
             }
         }
 
-        var item = new Item(name, price, count, img);
+        var item = new Item(product_id, name, price, count, img);
         cart.push(item);
         saveCart();
     };
@@ -176,10 +177,11 @@ const shoppingCart = (function() {
 })();
     $(".add-to-cart").click(function(event) {
         event.preventDefault();
+        var product_id = $(this).attr("data-product_id");
         var name = $(this).attr("data-name");
         var price = Number($(this).attr("data-price"));
         var img = $(this).attr("data-img");
-        shoppingCart.addItemToCart(name, price, 1 ,img);
+        shoppingCart.addItemToCart(product_id, name, price, 1 ,img);
         displayCart();
         cartWrapper.removeClass('empty');
     });
