@@ -66,7 +66,7 @@ const shoppingCart = (function() {
     let cart = [];
 
     function Item(name, price, count, img) {
-        this.name = name;
+        this.product_id = name;
         this.price = price;
         this.count = count;
         this.img = img;
