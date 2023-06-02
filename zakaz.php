@@ -6,9 +6,6 @@ session_start();
 $productsList = $_POST['productsList'];
 $productsList = json_decode($productsList, true);
 
-var_dump($productsList);
-exit;
-
 $products = urlencode(serialize($productsList));
 
 $sender = urlencode(serialize($_SERVER));
