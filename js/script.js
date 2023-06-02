@@ -25,12 +25,18 @@ const closeButton = document.querySelector('.close-button');
 button.addEventListener('click', () => {
   form.classList.add('formbox_open');
   popup.classList.add('popup_open');
+  sendProductsList();
 });
 
 closeButton.addEventListener('click', () => {
   form.classList.remove('formbox_open');
   popup.classList.remove('popup_open');
 });
+
+function sendProductsList() {
+    const data = localStorage.getItem('shoppingCart');
+    document.querySelector('input[name="productsList"]').value = data;
+}
 
 
 
