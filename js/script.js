@@ -34,13 +34,10 @@ closeButton.addEventListener('click', () => {
 });
 
 function sendProductsList() {
-    const data = localStorage.getItem('shoppingCart');
-    document.querySelector('input[name="productsList"]').value = data;
+    let data = JSON.parse(localStorage.getItem('shoppingCart'));
+    data = data.map(({ name, img, ...rest }) => rest);
+    document.querySelector('input[name="productsList"]').value = JSON.stringify(data);
 }
-
-
-
-
 
 
 

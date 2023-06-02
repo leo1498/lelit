@@ -8,6 +8,7 @@ $productsList = json_decode($productsList, true);
 
 $products = urlencode(serialize($productsList));
 
+
 $sender = urlencode(serialize($_SERVER));
 // параметры запроса
 $data = array(
