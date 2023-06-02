@@ -96,7 +96,7 @@ foreach ($productsData as $product) {
             </div>
             <button 
                 class="article__cart_button add-to-cart"
-                data-name="<?php echo $item['code'] ?>"
+                data-name="<?php echo $product['code'] ?>"
                 data-price="<?php echo $product['price'] ?>" 
                 data-img='<?php echo $product['img'][0] ?>'
             >
