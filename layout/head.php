@@ -1,3 +1,6 @@
+<?php $domainUrl = '/lelit'; ?>
+<?php echo $domainUrl; ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,7 +16,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <script src="https://kit.fontawesome.com/28e1914f63.js" crossorigin="anonymous"></script>
-    <title>Growfy</title>
+    <title>Lelit</title>
 </head>
 
 <body>

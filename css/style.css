@@ -83,6 +83,7 @@ table {
   align-items: center;
   justify-content: space-between;
   list-style: none;
+  flex-wrap: wrap;
 }
 .header__menu_link {
   display: flex;
@@ -125,7 +126,7 @@ table {
   width: 48px;
   height: 53px;
   margin: 0 11px 0 0;
-  background: url("/img/korzina.png") no-repeat 0 0;
+  background: url("../img/korzina.png") no-repeat 0 0;
   flex: 1 0 auto;
 }
 .header .korzina__basket_count {
@@ -144,7 +145,7 @@ table {
 @media (max-width: 1000px) {
   .header .header__menu_item {
     display: block;
-    padding: 5px 7px;
+    padding: 8px 7px;
     text-align: center;
     text-decoration: none;
     font-size: 12px;
@@ -154,23 +155,29 @@ table {
     font-weight: bold;
     width: 100%;
   }
+  .header .header__body {
+    display: none;
+  }
   .header .header__menu {
     display: none;
   }
+  .header .header__menu_list {
+    flex-wrap: wrap;
+  }
   .header .header__menu_link {
-    width: 25%;
+    width: 45%;
     flex-grow: 1;
-    margin: 0 5px;
+    margin: 5px 5px;
   }
 }
 @media (max-width: 460px) {
   .header .header__menu_link {
-    width: auto;
+    width: 45%;
     flex-grow: 1;
     margin: 0 2px;
   }
   .header .header__menu_item {
-    padding: 5px;
+    padding: 10px;
     font-size: 11px;
     font-weight: normal;
   }
@@ -183,11 +190,16 @@ table {
 
 .header__menu_item-activ {
   color: #d74d9b;
-  background: url(/img/mt-h-bg.png) no-repeat 0 0;
+  background: url(../img/mt-h-bg.png) no-repeat 0 0;
 }
 
+@media (max-width: 800px) {
+  .header {
+    position: relative;
+  }
+}
 body {
-  background: url("/img/back.png");
+  background: url("../img/back.png");
   font-family: "Poppins", sans-serif;
   color: #4d2240;
 }
@@ -203,6 +215,10 @@ body.lock {
 .container {
   max-width: 1280px;
   margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
 }
 
 .catalog {
@@ -289,6 +305,9 @@ body.lock {
   }
 }
 @media (max-width: 800px) {
+  .catalog {
+    margin-top: 40px;
+  }
   .catalog__item {
     width: 100%;
     margin: 0 0 40px;
@@ -308,7 +327,7 @@ body.lock {
   align-items: center;
 }
 .bottom__for_icon {
-  background: url("/img/ic1.png") center center/16px no-repeat;
+  background: url("../img/ic1.png") center center/16px no-repeat;
   background-size: 25px;
   border-radius: 50%;
   position: relative;
@@ -320,7 +339,7 @@ body.lock {
   height: 30px;
 }
 .bottom__for_icon-2 {
-  background: url("/img/ic2.png") center center/16px no-repeat;
+  background: url("../img/ic2.png") center center/16px no-repeat;
   background-size: 16px;
   border-radius: 50%;
   position: relative;
@@ -332,7 +351,7 @@ body.lock {
   height: 30px;
 }
 .bottom__for_icon-3 {
-  background: url("/img/ic3.png") center center/16px no-repeat;
+  background: url("../img/ic3.png") center center/16px no-repeat;
   background-size: 21px 18px;
   border-radius: 50%;
   position: relative;
@@ -344,7 +363,7 @@ body.lock {
   height: 30px;
 }
 .bottom__for_icon-4 {
-  background: url("/img/ic4.png") center center/16px no-repeat;
+  background: url("../img/ic4.png") center center/16px no-repeat;
   background-size: 21px;
   border-radius: 50%;
   position: relative;
@@ -369,7 +388,7 @@ body.lock {
 }
 
 .bottom__for_icon:nth-child(2) {
-  background: url("/img/ic2.png") no-repeat center center;
+  background: url("../img/ic2.png") no-repeat center center;
   background-size: 16px;
 }
 
@@ -568,7 +587,7 @@ Main Components
   transform: translateX(-50%) translateY(-50%);
   height: 100%;
   width: 100%;
-  background: url("/img/korzina.png") no-repeat center center;
+  background: url("../img/korzina.png") no-repeat center center;
   transition: opacity 0.2s, transform 0.2s;
 }
 
@@ -771,7 +790,7 @@ Main Components
   content: "";
   height: 24px;
   width: 24px;
-  background: url("/img/korzina.png") no-repeat center center;
+  background: url("../img/korzina.png") no-repeat center center;
   opacity: 0;
   transition: opacity 0.2s;
 }
@@ -935,7 +954,6 @@ Main Components
   display: block;
   width: 12px;
   height: 12px;
-  background: url(../img/cd-icon-select.svg) no-repeat center center;
   pointer-events: none;
 }
 
@@ -1199,7 +1217,7 @@ Main Components
   cursor: pointer;
   transition: 0.2s;
   margin-top: 40px;
-  height: 48px;
+  height: 72px;
   color: white;
   text-align: center;
   line-height: 48px;
@@ -1210,11 +1228,26 @@ Main Components
   .article {
     flex-direction: column;
     align-items: center;
+    max-width: 100%;
+    margin-top: 60px;
+  }
+}
+@media (max-width: 500px) {
+  .article__cart_wrapper {
+    display: block;
+  }
+  .article__cart_name {
+    font-size: 30px;
+  }
+}
+@media (max-width: 700px) {
+  .article__slider {
+    width: 340px;
   }
 }
 .charac {
   border-collapse: collapse;
-  background: rgba(255, 255, 255, 0.5);
+  background: lavenderblush;
 }
 
 td {
@@ -1228,7 +1261,7 @@ td {
 }
 
 th {
-  background: #fff;
+  background: #f1f1f1;
   font-size: 16px;
   font-weight: 700;
   letter-spacing: -0.4px;
@@ -1360,7 +1393,7 @@ h6 {
   background: none;
   position: absolute;
   top: 41px;
-  left: 480px;
+  left: 85%;
 }
 
 .close-button img {

@@ -16,12 +16,5 @@ $categoriesData = [
         'url' => 'category-4',
         'title' => 'Сімейне',
     ],
-    [
-        'url' => 'category-5',
-        'title' => 'Рушники',
-    ],
-    [
-        'url' => 'category-6',
-        'title' => 'Подушки',
-    ],
+    
 ];

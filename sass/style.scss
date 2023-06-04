@@ -7,7 +7,7 @@
 @import "components/footer.scss";
 
 body{
-   background: url("/img/back.png");
+   background: url("../img/back.png");
     font-family: 'Poppins', sans-serif;   
     color: #4d2240;
 }
@@ -119,6 +119,9 @@ a{
     }
 }
 @media(max-width:800px){
+  .catalog{
+    margin-top: 40px;
+  }
     .catalog__item{
         width: 100%;
         margin: 0 0 40px;
@@ -142,7 +145,7 @@ a{
         align-items: center;
 
         &_icon {
-            background: url('/img/ic1.png') center center/16px no-repeat;
+            background: url('../img/ic1.png') center center/16px no-repeat;
             background-size: 25px;
             border-radius: 50%;
             position: relative;
@@ -154,7 +157,7 @@ a{
             height: 30px;
         }
         &_icon-2{
-            background: url('/img/ic2.png') center center/16px no-repeat;
+            background: url('../img/ic2.png') center center/16px no-repeat;
             background-size: 16px;
             border-radius: 50%;
             position: relative;
@@ -166,7 +169,7 @@ a{
             height: 30px;
         }
         &_icon-3{
-            background: url('/img/ic3.png') center center/16px no-repeat;
+            background: url('../img/ic3.png') center center/16px no-repeat;
             background-size: 21px 18px;
             border-radius: 50%;
             position: relative;
@@ -178,7 +181,7 @@ a{
             height: 30px;
         }
         &_icon-4{
-            background: url('/img/ic4.png') center center/16px no-repeat;
+            background: url('../img/ic4.png') center center/16px no-repeat;
             background-size: 21px;
             border-radius: 50%;
             position: relative;
@@ -206,7 +209,7 @@ a{
     }
 }
 .bottom__for_icon:nth-child(2){
-    background: url('/img/ic2.png') no-repeat center center;
+    background: url('../img/ic2.png') no-repeat center center;
     background-size: 16px;
 }
 .price {
@@ -430,7 +433,7 @@ a{
             transform: translateX(-50%) translateY(-50%);
     height: 100%;
     width: 100%;
-    background: url('/img/korzina.png') no-repeat center center;
+    background: url('../img/korzina.png') no-repeat center center;
     -webkit-transition: opacity .2s, -webkit-transform .2s;
     transition: opacity .2s, -webkit-transform .2s;
     transition: opacity .2s, transform .2s;
@@ -644,7 +647,7 @@ a{
     content: '';
     height: 24px;
     width: 24px;
-    background: url('/img/korzina.png') no-repeat center center;
+    background: url('../img/korzina.png') no-repeat center center;
     opacity: 0;
     -webkit-transition: opacity .2s;
     transition: opacity .2s;
@@ -1167,7 +1170,7 @@ margin-top: 40px;
             transition: .2s;
             margin-top: 40px  ;
             
-            height: 48px;
+            height: 72px;
             color: white;
             text-align: center;
             line-height: 48px;
@@ -1179,11 +1182,27 @@ margin-top: 40px;
   .article{
     flex-direction: column;
     align-items: center;
+    max-width: 100%;
+    margin-top: 60px;
   }
+}
+@media(max-width:500px){
+  .article__cart_wrapper{
+    display: block;
+  }
+  .article__cart_name{
+    font-size: 30px;
+  }
+}
+@media(max-width:700px){
+  .article__slider{
+   width: 340px;
+  }
+  
 }
 .charac {
     border-collapse: collapse;
-    background: rgba(255, 255, 255, 0.5);
+    background: lavenderblush;
     
 }
 td{
@@ -1196,7 +1215,7 @@ td{
     border: 2px solid #fff;
 }
 th{
-    background: #fff;
+  background: #f1f1f1;
     font-size: 16px;
     font-weight: 700;
     letter-spacing: -0.4px;
@@ -1333,7 +1352,7 @@ display: block;
   background: none;
   position: absolute;
   top: 41px;
-    left: 480px;
+    left: 85%;
 }
 .close-button img{
   width: 30px;

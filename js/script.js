@@ -34,10 +34,20 @@ closeButton.addEventListener('click', () => {
 });
 
 function sendProductsList() {
-    let data = JSON.parse(localStorage.getItem('shoppingCart'));
-    data = data.map(({ name, img, ...rest }) => rest);
+    const cartArray = shoppingCart.listCart();
+    const data = cartArray.slice(0, 3).map(item => {
+        return {
+            name: item.name,
+            count: item.count,
+            price: item.price
+        };
+    });
     document.querySelector('input[name="productsList"]').value = JSON.stringify(data);
 }
+
+
+
+
 
 
 

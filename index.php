@@ -17,7 +17,7 @@ if (isset($_GET['category'])) {
 <div class="container">
     <div class="catalog">
         <div class="catalog__img">
-            <img loading="lazy" src="/img/header-img.png" alt="">
+            <img loading="lazy" src="img/header-img.png" alt="">
         </div>
         <div class="catalog__sale">
             <p>
