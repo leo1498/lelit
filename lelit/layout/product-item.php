@@ -1,8 +1,8 @@
 <div class="catalog__item">
-    <a href="/product.php?id=<?php echo $item['code'] ?>" class="catalog__item_header">
+    <a href="<?php echo $domainUrl; ?>/product.php?id=<?php echo $item['code'] ?>" class="catalog__item_header">
         <span><?php echo $item['title'] ?></span>
     </a>
-    <a href="/product.php?id=<?php echo $item['code'] ?>"  class="catalog__item_img">
+    <a href="<?php echo $domainUrl; ?>/product.php?id=<?php echo $item['code'] ?>"  class="catalog__item_img">
         <div class="swiper">
             <div class="swiper-wrapper">
                 <?php if ($item['img']) : ?>

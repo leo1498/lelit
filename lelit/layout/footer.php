@@ -6,7 +6,7 @@
             <div class="delivery__list">
                 <div class="delivery__list_item">
                     <div class="delivery__list_item-img">
-                        <img src="img/step-2.png" alt="">
+                        <img src="<?php echo $domainUrl; ?>/img/step-2.png" alt="">
                     </div>
                     <div class="delivery__list_item-text">
                         Доставка по всій Украіні.
@@ -17,7 +17,7 @@
                 </div>
                 <div class="delivery__list_item">
                     <div class="delivery__list_item-img">
-                        <img src="img/step-1.png" alt="">
+                        <img src="<?php echo $domainUrl; ?>/img/step-1.png" alt="">
                     </div>
                     <div class="delivery__list_item-text">
                         Тільки якісні матеріали.
@@ -28,7 +28,7 @@
                 </div>
                 <div class="delivery__list_item">
                     <div class="delivery__list_item-img">
-                        <img src="img/step-3.png" alt="">
+                        <img src="<?php echo $domainUrl; ?>/img/step-3.png" alt="">
                     </div>
                     <div class="delivery__list_item-text">
                         Оплата при отриманні замовлення.
@@ -72,8 +72,8 @@
 
     <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
 
-    <script src="js/slider/slick-1.8.0/slick.min.js"></script>
-    <script src="js/script.js"></script>
+    <script src="<?php echo $domainUrl; ?>/js/slider/slick-1.8.0/slick.min.js"></script>
+    <script src="<?php echo $domainUrl; ?>/js/script.js"></script>
 
 </body>
 </html>

@@ -12,7 +12,7 @@
                     <input class="field" name="phone" type="tel" placeholder="Ваш телефон" required>
                     <button class="pay" type="submit">Замовити зараз</button>
                 </form>
-                <button class="close-button"><img src="img/close.png" alt=""></button>
+                <button class="close-button"><img src="<?php echo $domainUrl; ?>/img/close.png" alt=""></button>
             </div>
         </div>
     </div>
