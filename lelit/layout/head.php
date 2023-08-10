@@ -1,7 +1,7 @@
 <?php $domainUrl = '/lelit'; ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ua">
 
 <head>
     <meta charset="UTF-8">
